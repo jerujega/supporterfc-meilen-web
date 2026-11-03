@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-vintage: #FAF8F5;
+  --color-cream: #F2EFE9;
+  --color-ink: #0B0C10;
+  --color-gold: #F5A900;
+  --color-orange: #FF4500;
+  
+  --font-sans: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+}
+
+body {
+  background-color: var(--color-vintage);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+}
+
+/* Base resets & typography tweaks */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-weight: 700;
+}

@@ -1,0 +1,247 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "history": "50 Jahre Geschichte",
+    "blog": "Blog",
+    "news": "News",
+    "gallery": "Galerie",
+    "merch": "Shop",
+    "join": "Mitglied Werden",
+    "contact": "Kontakt"
+  },
+  "Hero": {
+    "title": "50 Jahre Supporter FC Meilen",
+    "subtitle": "Eine Gemeinschaft von Leidenschaft und Tradition seit 1976.",
+    "countdownPretext": "50-Jahre-Jubiläumsfest",
+    "announcementDate": "Herbst 2027",
+    "announcementNote": "Das 50-Jahre-Jubiläumsfest der Supporter-Vereinigung FC Meilen ist für Herbst 2027 geplant. Das genaue Datum und weitere Details werden noch bekannt gegeben."
+  },
+  "Intro": {
+    "year": "1976",
+    "overline": "UNSERE GESCHICHTE BEGINNT MIT LEIDENSCHAFT",
+    "headline": "In Siegen wie in Niederlagen stand unsere Gemeinschaft immer zusammen auf den Rängen. Gegründet von einer Handvoll engagierter Fans, die eine tiefe Liebe zum Fussball und zu ihrer Heimat Meilen teilen, ist die Supporter Vereinigung FC Meilen heute ein fester Bestandteil der lokalen Fussballkultur.",
+    "p1": "Was einst bei ein paar Bieren nach dem Spiel begann, hat sich über fünf Jahrzehnte zu einer starken Gemeinschaft entwickelt.",
+    "p2": "Von den ersten organisierten Auswärtsfahrten in den späten 70er-Jahren bis hin zu kreativen Fanaktionen in der heutigen Zeit ist eines immer gleich geblieben: unsere bedingungslose Unterstützung für den FC Meilen."
+  },
+  "Timeline": {
+    "title": "Meilensteine",
+    "subtitle": "Scrollen Sie durch ein halbes Jahrhundert",
+    "foundation": "Die Gründung",
+    "victory": "Historischer Sieg",
+    "anniversary": "50-jähriges Jubiläum",
+    "archivePhoto": "Archivfoto"
+  },
+  "Stories": {
+    "title": "Supporter Geschichten",
+    "subtitle": "Stimmen von den Rängen",
+    "readAll": "Zeig mir alle Geschichten",
+    "matchday": "Spieltag",
+    "coverImage": "Titelbild",
+    "derbyTitle": "Die Derby-Atmosphäre",
+    "derbyDesc": "Die Emotionen kochten hoch, als die Mannschaften das Spielfeld betraten. Ein unvergesslicher Moment für jeden Fan."
+  },
+  "News": {
+    "title": "Letzte News",
+    "subtitle": "Offizielle Club-Bekanntmachungen",
+    "readMore": "Mehr erfahren",
+    "allNews": "Zeig mir alle News"
+  },
+  "Gallery": {
+    "title": "Galerie",
+    "subtitle": "Historische, ungeschnittene Fotografie. Von 1976 bis heute.",
+    "overline": "Die Archive",
+    "viewAll": "Galerie ansehen",
+    "mockPhoto": "Mock Foto",
+    "backToGallery": "Zurück zur Galerie",
+    "expandedView": "Erweiterte Ansicht",
+    "archivalDocument": "Archivdokument"
+  },
+  "Merch": {
+    "overline": "Offizielles Merch",
+    "title": "Trage die Farben",
+    "subtitle": "Unterstützen Sie den Club direkt. Exklusive Jubiläumsausrüstung jetzt verfügbar.",
+    "productName": "Jubiläums-Schal",
+    "oneSize": "Einheitsgrösse",
+    "shopAll": "Alle Fanartikel ansehen"
+  },
+  "Footer": {
+    "brandDesc": "Eine Gemeinschaft von Leidenschaft und Tradition seit 1976. Wir unterstützen die Fussballkultur in Meilen.",
+    "menu": "Menü",
+    "newsletterTitle": "Newsletter",
+    "newsletterDesc": "Bleiben Sie auf dem Laufenden mit unseren neuesten Nachrichten und Veranstaltungen.",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "subscribe": "Abonnieren",
+    "submitting": "Wird abonniert...",
+    "success": "Erfolgreich für den Newsletter angemeldet!",
+    "error": "Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  },
+  "HistoryPage": {
+    "title": "50 Jahre Geschichte",
+    "subtitle": "Ein halbes Jahrhundert voller Leidenschaft, Loyalität und lokaler Tradition.",
+    "foundationTitle": "Die frühen Tage",
+    "foundationDesc": "In den 70er Jahren begann alles mit einer Gruppe von Freunden, die mehr als nur Zuschauer sein wollten. Sie wollten die Seele des Vereins sein.",
+    "milestone1Title": "Treue über Generationen",
+    "milestone1Desc": "Vom Aufstieg bis zum Abstieg, wir sind geblieben. Unsere Farben wehen stolz in jedem Stadion.",
+    "milestone2Title": "Kultur & Choreo",
+    "milestone2Desc": "Die Einführung unserer ersten grossen Choreos markierte einen Wendepunkt in der Schweizer Fankultur.",
+    "milestone3Title": "Das 50. Jubiläum",
+    "milestone3Desc": "Heute feiern wir nicht nur einen Verein, sondern eine Familie, die seit 1976 besteht.",
+    "cta": "Mitglied werden & Geschichte schreiben"
+  },
+  "Contact": {
+    "overline": "Kontaktieren Sie uns",
+    "title": "Kontakt",
+    "hq": "Hauptquartier",
+    "formTitle": "Senden Sie uns eine Nachricht",
+    "nameLabel": "Vollständiger Name *",
+    "emailLabel": "E-Mail-Adresse *",
+    "subjectLabel": "Betreff *",
+    "messageLabel": "Nachricht *",
+    "sendButton": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht erhalten. Wir werden uns bald bei Ihnen melden.",
+    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+    "subjects": {
+      "general": "Allgemeine Anfrage",
+      "other": "Anderes (Bitte angeben)..."
+    },
+    "addressTitle": "Offizielle Adresse",
+    "mapTitle": "Meilen Stadion",
+    "mapSubtitle": "Wo wir an Spieltagen stehen."
+  },
+  "About": {
+    "overline": "Unsere Identität",
+    "title": "Gegen modernen Fussball",
+    "subtitle": "Wir stehen für Tradition, lokalen Stolz und 90 Minuten bedingungslose lautstarke Unterstützung.",
+    "foundationTitle": "Der Gründungsmythos",
+    "foundationDesc1": "Im Herbst 1976 stand eine Gruppe von Freunden im Regen hinter dem Tor und sah zu, wie Meilen ein enges Spiel verlor. Anstatt zu gehen, begannen sie zu singen. Dieser Moment – trotz Wetter und Rückstand zusammenzustehen – wurde zum Ursprung einer Bewegung, die bis heute lebt.",
+    "foundationDesc2": "Seit fünf Jahrzehnten ist die Supporter Vereinigung FC Meilen das schlagende Herz unseres Stadions. Wir sind nicht nur Fans – wir sind der 12. Mann. Mit unseren Mitgliederbeiträgen unterstützen wir gezielt die Juniorenabteilung und den Club: Wir helfen bei Fussballcamps, organisieren Turniere, leisten finanzielle Beiträge für Trikots und entlasten den Verein auch administrativ. So sorgen wir gemeinsam dafür, dass der lokale Fussball in Meilen nachhaltig gefördert wird und weiterlebt.",
+    "solidarityTitle": "Gemeinschaft & Solidarität",
+    "solidarityDesc1": "Der FC Meilen ist mehr als ein Spiel – er ist Zusammenhalt, Identität und Familie. Als Supporter Vereinigung FC Meilen fördern wir aktiv die Gemeinschaft: durch Jugendturniere, Unterstützung sozialer Projekte und Engagement vor Ort.",
+    "solidarityDesc2": "Wir glauben an echten Fussball – nahbar, ehrlich und für alle. Darum setzen wir uns gegen übertriebene Kommerzialisierung ein und stehen dafür, dass jeder in Meilen die Möglichkeit hat, Teil dieses Vereins und dieser Gemeinschaft zu sein.",
+    "pillarsTitle": "Die drei Säulen",
+    "pillar1Title": "Loyalität",
+    "pillar1Desc": "Durch die Ligen, durch die Jahrzehnte. Wir gehen nie früher.",
+    "pillar2Title": "Unabhängigkeit",
+    "pillar2Desc": "Selbstfinanziert, selbstorganisiert. Wir schulden modernen Sponsoren nichts.",
+    "pillar3Title": "Leidenschaft",
+    "pillar3Desc": "Lauter Gesang, Pyrotechnik und absolute Hingabe zu den Farben.",
+    "president": {
+      "overline": "Führung",
+      "title": "Unser Präsident",
+      "name": "Dr. Sanji Lingam",
+      "bio": "Die Nachwuchsförderung ist die Investition in die Zukunft unseres Vereins. Gemeinsam mit unseren Mitgliedern und Partnern schaffen wir nachhaltige Perspektiven für den FC Meilen",
+      "contact": "sanji@lingamdynasty.ch"
+    },
+    "team": {
+      "title": "Das Team",
+      "subtitle": "Die Menschen hinter der Leidenschaft.",
+      "members": {
+        "m1": {
+          "name": "Slavica Jovanovic",
+          "role": "Kassiererin",
+          "code": "SJ-01",
+          "bio": "Slavica Jovanovic verantwortet die finanzielle Führung der Supporter-Vereinigung. Mit Präzision und Transparenz stellt sie sicher, dass alle Mittel gezielt und verantwortungsvoll für die Juniorinnen und Junioren eingesetzt werden."
+        },
+        "m2": {
+          "name": "Hanspeter Huber",
+          "role": "Vorstandsmitglied",
+          "code": "HH-02",
+          "bio": "Hanspeter Huber bringt langjährige Erfahrung und Vereinsverbundenheit in die Vorstandsarbeit ein. Er unterstützt strategische Projekte und trägt zur Stärkung der Gemeinschaft rund um den FC Meilen bei."
+        },
+        "m3": {
+          "name": "Wolfgang Hafner",
+          "role": "Vorstandsmitglied",
+          "code": "WH-03",
+          "bio": "Wolfgang Hafner engagiert sich insbesondere in organisatorischen und eventbezogenen Themen. Sein Einsatz trägt wesentlich zur erfolgreichen Umsetzung von Vereinsanlässen und Jubiläumsprojekten bei."
+        },
+        "m4": {
+          "name": "Danijela Frei",
+          "role": "Vorstandsmitglied",
+          "code": "DF-04",
+          "bio": "Danijela Frei unterstützt den Vorstand in administrativen und kommunikativen Belangen. Mit ihrem Engagement stärkt sie die interne Organisation sowie die Präsenz der Supporter-Vereinigung nach aussen."
+        }
+      }
+    }
+  },
+  "NewsPage": {
+    "title": "Neuigkeiten",
+    "subtitle": "Wichtige Ankündigungen, Reiseinfos und schnelle Updates.",
+    "backToNews": "Zurück zu den News",
+    "notFound": "News-Eintrag nicht gefunden oder Mock-Daten werden angezeigt.",
+    "noDetails": "Keine zusätzlichen Details verfügbar."
+  },
+  "BlogPage": {
+    "title": "Geschichten",
+    "subtitle": "Spielberichte, Erbe-Einblicke und Ankündigungen der Supporter FC Meilen Gemeinschaft.",
+    "noImage": "Kein Bild",
+    "uncategorized": "Unkategorisiert",
+    "readArticle": "Artikel lesen",
+    "backToStories": "Zurück zu den Geschichten",
+    "notFound": "Beitrag nicht gefunden. Dies ist ein Design-Platzhalter.",
+    "noContent": "Kein Inhalt verfügbar.",
+    "author": "Autor"
+  },
+  "MerchPage": {
+    "overline": "Fanartikel",
+    "title": "Trage die Farben",
+    "subtitle": "Mit jedem Beitrag unterstützt du direkt unsere Junioren und den FC Meilen. Du ermöglichst Fussballcamps, Turniere, Ausrüstung und wichtige Vereinsarbeit. Keine Profitmentalität – nur Leidenschaft für unseren Club und seine Zukunft."
+  },
+  "MerchDetail": {
+    "backToShop": "Alle Fanartikel ansehen",
+    "officialMerch": "Offizielles Merchandise",
+    "buyNow": "Jetzt im offiziellen Shop kaufen",
+    "noImage": "Kein Bild verfügbar",
+    "noDescription": "Keine Beschreibung für dieses Produkt verfügbar.",
+    "securePayment": "Transaktionen werden sicher über Spreadshirt abgewickelt",
+    "productNotFound": "Produkt nicht gefunden. Mock-Layout wird gerendert...",
+    "orderFormTitle": "Bestellanfrage",
+    "nameLabel": "Vollständiger Name *",
+    "emailLabel": "E-Mail-Adresse *",
+    "phoneLabel": "Telefonnummer",
+    "sizeLabel": "Grösse",
+    "sizeOneSize": "Einheitsgrösse",
+    "sizeS": "Klein (S)",
+    "sizeM": "Mittel (M)",
+    "sizeL": "Gross (L)",
+    "sizeXL": "Extra Gross (XL)",
+    "addressLabel": "Lieferadresse *",
+    "submitOrder": "Bestellanfrage Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Bestellanfrage gesendet! Wir kontaktieren Sie mit den Zahlungsdetails.",
+    "error": "Bestellanfrage fehlgeschlagen. Bitte versuchen Sie es später erneut."
+  },
+  "JoinPage": {
+    "overline": "Mitgliedschaft",
+    "title": "Werde ein",
+    "titleHighlight": "Supporter",
+    "subtitle": "Werde Teil der Supporter FC Meilen Familie. Als registriertes Mitglied finanzierst du direkt unsere Choreografien, Auswärtsbusse und den Kampf für authentischen Fussball.",
+    "standardTitle": "Standard Mitglied",
+    "standardDesc": "100 CHF / Jahr. Stimmrecht an der Generalversammlung.",
+    "lifetimeTitle": "Lebenslange Mitgliedschaft",
+    "lifetimeDesc": "Mit einem einmaligen Beitrag von CHF 1’000.– erhalten Sie eine exklusive Mitgliedschaft inkl. Jubiläumsset \"50 Jahre\" sowie lebenslangem Stimmrecht – und unterstützen nachhaltig den FC Meilen.",
+    "formTitle": "Anmeldeformular",
+    "nameLabel": "Vollständiger Name *",
+    "emailLabel": "E-Mail-Adresse *",
+    "phoneLabel": "Telefonnummer",
+    "addressLabel": "Adresse *",
+    "levelLabel": "Mitgliedschaftsstufe *",
+    "standardOption": "Standard Mitglied (100 CHF/Jahr)",
+    "lifetimeOption": "Lebenslange Mitgliedschaft (1000 CHF)",
+    "submitButton": "Bewerbung einreichen",
+    "submitting": "Wird eingereicht...",
+    "successTitle": "Herzlichen Dank für Ihre Anmeldung!",
+    "successWelcome": "Willkommen bei der Supporter-Vereinigung des FC Meilen!",
+    "successBody": "Ihre Anmeldung wurde erfolgreich übermittelt.",
+    "successBody2": "Wir freuen uns sehr, Sie als neues Mitglied begrüssen zu dürfen.",
+    "successBody3": "Mit Ihrer Mitgliedschaft unterstützen Sie unsere Juniorinnen und Junioren und leisten einen wertvollen Beitrag zur Förderung des Fussballnachwuchses.",
+    "successBody4": "Gemeinsam fördern wir die Zukunft des FC Meilen!",
+    "successSignoff": "Sportliche Grüsse",
+    "successFrom": "Vorstand der Supporter-Vereinigung FC Meilen",
+    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+  }
+}

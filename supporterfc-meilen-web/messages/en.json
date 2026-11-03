@@ -1,0 +1,247 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "about": "About",
+        "history": "50 Years of History",
+        "blog": "Blog",
+        "news": "News",
+        "gallery": "Gallery",
+        "merch": "Shop",
+        "join": "Join Us",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "title": "50 Years Supporter FC Meilen",
+        "subtitle": "A community of passion and tradition since 1976.",
+        "countdownPretext": "50th Anniversary Celebration",
+        "announcementDate": "Autumn 2027",
+        "announcementNote": "The 50th anniversary celebration of the Supporter Association FC Meilen is planned for autumn 2027. The exact date and further details will be announced later."
+    },
+    "Intro": {
+        "year": "1976",
+        "overline": "OUR HISTORY BEGINS WITH PASSION",
+        "headline": "In victories as in defeats, our community has always stood together in the stands. Founded by a handful of dedicated fans who share a deep love for football and their hometown of Meilen, the Supporters Association of FC Meilen is today an integral part of the local football culture.",
+        "p1": "What once began over a few beers after the match has developed over five decades into a strong community.",
+        "p2": "From the first organized away trips in the late 1970s to creative fan activities today, one thing has always remained the same: our unconditional support for FC Meilen."
+    },
+    "Timeline": {
+        "title": "Milestones",
+        "subtitle": "Scroll through half a century",
+        "foundation": "The Foundation",
+        "victory": "Historic Victory",
+        "anniversary": "50th Anniversary",
+        "archivePhoto": "Archive Photo"
+    },
+    "Stories": {
+        "title": "Supporter Stories",
+        "subtitle": "Voice from the terraces",
+        "readAll": "Show All Stories",
+        "matchday": "Matchday",
+        "coverImage": "Cover Image",
+        "derbyTitle": "The Derby Atmosphere",
+        "derbyDesc": "Emotions ran high as the teams took the pitch. An unforgettable moment for every fan."
+    },
+    "News": {
+        "title": "Latest News",
+        "subtitle": "Official club announcements",
+        "readMore": "Read More",
+        "allNews": "Show All News"
+    },
+    "Gallery": {
+        "title": "Gallery",
+        "subtitle": "Historical un-cropped photography. From 1976 to today.",
+        "overline": "The Archives",
+        "viewAll": "View Gallery",
+        "mockPhoto": "Mock Photo",
+        "backToGallery": "Back to Gallery",
+        "expandedView": "Expanded view",
+        "archivalDocument": "Archival Document"
+    },
+    "Merch": {
+        "overline": "Official Merch",
+        "title": "Wear The Colours",
+        "subtitle": "Support the club directly. Exclusive anniversary gear available now.",
+        "productName": "Anniversary Scarf",
+        "oneSize": "One Size",
+        "shopAll": "Shop All Gear"
+    },
+    "Footer": {
+        "brandDesc": "A community of passion and tradition since 1976. Supporting football culture in Meilen.",
+        "menu": "Menu",
+        "newsletterTitle": "Newsletter",
+        "newsletterDesc": "Stay updated with our latest news and events.",
+        "emailPlaceholder": "Email address",
+        "subscribe": "Subscribe",
+        "submitting": "Subscribing...",
+        "success": "Successfully subscribed to the newsletter!",
+        "error": "Failed to subscribe. Please try again.",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    },
+    "HistoryPage": {
+        "title": "50 Years of History",
+        "subtitle": "A half-century of passion, loyalty, and local tradition.",
+        "foundationTitle": "The Early Days",
+        "foundationDesc": "In the 70s, it all began with a group of friends who wanted to be more than just spectators. They wanted to be the soul of the club.",
+        "milestone1Title": "Loyalty over Generations",
+        "milestone1Desc": "From promotion to relegation, we stayed. Our colors fly proudly in every stadium.",
+        "milestone2Title": "Culture & Choreo",
+        "milestone2Desc": "The introduction of our first major choreographies marked a turning point in Swiss fan culture.",
+        "milestone3Title": "The 50th Anniversary",
+        "milestone3Desc": "Today we celebrate not just a club, but a family that has existed since 1976.",
+        "cta": "Join Us & Make History"
+    },
+    "Contact": {
+        "overline": "Get in touch",
+        "title": "Contact",
+        "hq": "Headquarters",
+        "formTitle": "Send a Message",
+        "nameLabel": "Full Name *",
+        "emailLabel": "Email Address *",
+        "subjectLabel": "Subject *",
+        "messageLabel": "Message *",
+        "sendButton": "Send Message",
+        "sending": "Sending...",
+        "success": "Message Received. We will get back to you soon.",
+        "error": "Something went wrong. Please try again.",
+        "subjects": {
+            "general": "General Inquiry",
+            "other": "Other (please specify)..."
+        },
+        "addressTitle": "Official Address",
+        "mapTitle": "Meilen Stadium",
+        "mapSubtitle": "Where we stand on Matchdays."
+    },
+    "About": {
+        "overline": "Our Identity",
+        "title": "Against Modern Football",
+        "subtitle": "We stand for tradition, local pride, and 90 minutes of unconditional vocal support.",
+        "foundationTitle": "The Founding Myth",
+        "foundationDesc1": "In autumn 1976, a group of friends stood in the rain behind the goal, watching Meilen lose a close match. Instead of leaving, they began to sing. That moment—standing together despite the weather and the score—became the origin of a movement that lives on to this day.",
+        "foundationDesc2": "For five decades, the Supporters Association of FC Meilen has been the beating heart of our stadium. We are not just fans – we are the 12th man. With our membership contributions, we specifically support the youth department and the club: we help with football camps, organize tournaments, provide financial contributions for kits, and also support the club administratively. Together, we ensure that local football in Meilen is sustainably promoted and continues to thrive.",
+        "solidarityTitle": "Community & Solidarity",
+        "solidarityDesc1": "FC Meilen is more than a game – it is unity, identity, and family. As the Supporters Association of FC Meilen, we actively promote the community: through youth tournaments, support for social projects, and local engagement.",
+        "solidarityDesc2": "We believe in real football – approachable, honest, and for everyone. That is why we stand against excessive commercialization and advocate for everyone in Meilen to have the opportunity to be part of this club and this community.",
+        "pillarsTitle": "The Three Pillars",
+        "pillar1Title": "Loyalty",
+        "pillar1Desc": "Through the leagues, through the decades. We never leave early.",
+        "pillar2Title": "Independence",
+        "pillar2Desc": "Self-funded, self-organized. We owe nothing to modern sponsors.",
+        "pillar3Title": "Passion",
+        "pillar3Desc": "Loud singing, pyrotechnics, and absolute dedication to the colors.",
+        "president": {
+            "overline": "Leadership",
+            "title": "Our President",
+            "name": "Dr. Sanji Lingam",
+            "bio": "Youth development is an investment in the future of our club.Together with our members and partners, we create sustainable prospects for FC Meilen.",
+            "contact": "sanji@lingamdynasty.ch"
+        },
+        "team": {
+            "title": "The Team",
+            "subtitle": "The people behind the passion.",
+            "members": {
+                "m1": {
+                    "name": "Slavica Jovanovic",
+                    "role": "Treasurer",
+                    "code": "SJ-01",
+                    "bio": "Slavica Jovanovic is responsible for the financial management of the Supporters' Association. With precision and transparency, she ensures that all funds are used purposefully and responsibly for the junior teams."
+                },
+                "m2": {
+                    "name": "Hanspeter Huber",
+                    "role": "Board Member",
+                    "code": "HH-02",
+                    "bio": "Hanspeter Huber brings years of experience and club loyalty to the board. He supports strategic projects and contributes to strengthening the community around FC Meilen."
+                },
+                "m3": {
+                    "name": "Wolfgang Hafner",
+                    "role": "Board Member",
+                    "code": "WH-03",
+                    "bio": "Wolfgang Hafner is particularly involved in organizational and event-related topics. His commitment contributes significantly to the successful implementation of club events and anniversary projects."
+                },
+                "m4": {
+                    "name": "Danijela Frei",
+                    "role": "Board Member",
+                    "code": "DF-04",
+                    "bio": "Danijela Frei supports the board in administrative and communicative matters. With her dedication, she strengthens the internal organization and the external presence of the Supporters' Association."
+                }
+            }
+        }
+    },
+    "NewsPage": {
+        "title": "News",
+        "subtitle": "Important announcements, travel info, and quick updates.",
+        "backToNews": "Back to News",
+        "notFound": "News item not found or mock data being viewed.",
+        "noDetails": "No additional details provided."
+    },
+    "BlogPage": {
+        "title": "Stories",
+        "subtitle": "Match reports, heritage deep-dives, and announcements from the Supporter FC Meilen community.",
+        "noImage": "No Image",
+        "uncategorized": "Uncategorized",
+        "readArticle": "Read Article",
+        "backToStories": "Back to Stories",
+        "notFound": "Post not found in Sanity. This is a design placeholder.",
+        "noContent": "No content available.",
+        "author": "Author"
+    },
+    "MerchPage": {
+        "overline": "Merchandise",
+        "title": "Wear The Colours",
+        "subtitle": "With every contribution, you directly support our juniors and FC Meilen. You make football camps, tournaments, equipment, and essential club work possible. No profit mentality – just passion for our club and its future."
+    },
+    "MerchDetail": {
+        "backToShop": "Shop All Gear",
+        "officialMerch": "Official Merchandise",
+        "buyNow": "Buy Now on Official Store",
+        "noImage": "No Image Available",
+        "noDescription": "No description available for this product.",
+        "securePayment": "Transactions are handled securely via spreadshirt",
+        "productNotFound": "Product not found. Mock layout rendering...",
+        "orderFormTitle": "Order Request",
+        "nameLabel": "Full Name *",
+        "emailLabel": "Email Address *",
+        "phoneLabel": "Phone Number",
+        "sizeLabel": "Size",
+        "sizeOneSize": "One Size",
+        "sizeS": "Small (S)",
+        "sizeM": "Medium (M)",
+        "sizeL": "Large (L)",
+        "sizeXL": "Extra Large (XL)",
+        "addressLabel": "Shipping Address *",
+        "submitOrder": "Send Order Request",
+        "submitting": "Sending...",
+        "success": "Order request sent! We will contact you with payment details.",
+        "error": "Failed to send order request. Please try again later."
+    },
+    "JoinPage": {
+        "overline": "Membership",
+        "title": "Become a",
+        "titleHighlight": "Supporter",
+        "subtitle": "Join the Supporter FC Meilen family. By becoming a registered member, you directly fund our choreographies, away buses, and the ongoing fight to keep football authentic.",
+        "standardTitle": "Standard Member",
+        "standardDesc": "100 CHF / Year. Voting rights at the general assembly.",
+        "lifetimeTitle": "Lifetime Legacy",
+        "lifetimeDesc": "With a one-time contribution of CHF 1,000.–, you will receive an exclusive membership including the \"50 Years\" anniversary set as well as lifetime voting rights – and provide sustainable support for FC Meilen.",
+        "formTitle": "Registration Form",
+        "nameLabel": "Full Name *",
+        "emailLabel": "Email Address *",
+        "phoneLabel": "Phone Number",
+        "addressLabel": "Address *",
+        "levelLabel": "Membership Level *",
+        "standardOption": "Standard Member (100 CHF/Year)",
+        "lifetimeOption": "Lifetime Legacy (1000 CHF)",
+        "submitButton": "Submit Application",
+        "submitting": "Submitting...",
+        "successTitle": "Thank you for your registration!",
+        "successWelcome": "Welcome to the Supporter Association of FC Meilen!",
+        "successBody": "Your registration has been successfully submitted.",
+        "successBody2": "We are very pleased to welcome you as a new member.",
+        "successBody3": "With your membership, you support our junior players and make a valuable contribution to the development of youth football.",
+        "successBody4": "Together we promote the future of FC Meilen!",
+        "successSignoff": "Sporting regards",
+        "successFrom": "Board of the Supporter Association FC Meilen",
+        "error": "Something went wrong. Please try again."
+    }
+}
