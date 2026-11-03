@@ -26,11 +26,16 @@
     },
     "Timeline": {
         "title": "Milestones",
-        "subtitle": "Scroll through half a century",
-        "foundation": "The Foundation",
-        "victory": "Historic Victory",
-        "anniversary": "50th Anniversary",
-        "archivePhoto": "Archive Photo"
+        "subtitle": "Half a century of passion, loyalty, and club tradition",
+        "m1Title": "Gründung",
+        "m1Year": "1977",
+        "m1Desc": "The association was founded in 1977. For five decades, the Supporters have stood for loyalty, community, and sustainable youth development for FC Meilen at Sportanlage Allmend.",
+        "m2Title": "Historischer Tag",
+        "m2Year": "2024",
+        "m2Desc": "A fresh chapter for the Supporters Association: After 17 dedicated years on the board, Pascal Golay handed over leadership on Jan 18, 2024 to the newly elected board led by Sanji Lingam.",
+        "m3Title": "50-jähriges Jubiläum",
+        "m3Year": "2027",
+        "m3Desc": "50 years of Supporter Association FC Meilen (1977–2027). The anniversary celebration is planned for autumn 2027. Further details to follow."
     },
     "Stories": {
         "title": "Supporter Stories",

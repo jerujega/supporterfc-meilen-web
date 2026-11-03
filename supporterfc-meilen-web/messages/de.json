@@ -26,11 +26,16 @@
   },
   "Timeline": {
     "title": "Meilensteine",
-    "subtitle": "Scrollen Sie durch ein halbes Jahrhundert",
-    "foundation": "Die Gründung",
-    "victory": "Historischer Sieg",
-    "anniversary": "50-jähriges Jubiläum",
-    "archivePhoto": "Archivfoto"
+    "subtitle": "Ein halbes Jahrhundert voller Leidenschaft und Vereinstreue",
+    "m1Title": "Gründung",
+    "m1Year": "1977",
+    "m1Desc": "Der Verein wurde 1977 gegründet. Seit fünf Jahrzehnten stehen die Supporter für Treue, Gemeinschaft und die nachhaltige Förderung des FC Meilen auf der Sportanlage Allmend.",
+    "m2Title": "Historischer Tag",
+    "m2Year": "2024",
+    "m2Desc": "Frischer Wind bei der Supporter-Vereinigung: Nach 17 engagierten Jahren im Vorstand übergab Pascal Golay am 18.01.2024 die Zügel an den neuen Vorstand unter Sanji Lingam.",
+    "m3Title": "50-jähriges Jubiläum",
+    "m3Year": "2027",
+    "m3Desc": "50 Jahre Supporter-Vereinigung FC Meilen (1977–2027). Das grosse Jubiläumsfest ist für Herbst 2027 geplant. Der Vorstand freut sich auf dieses historische Vereinsfest."
   },
   "Stories": {
     "title": "Supporter Geschichten",
