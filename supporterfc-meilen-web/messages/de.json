@@ -12,13 +12,13 @@
   },
   "Hero": {
     "title": "50 Jahre Supporter FC Meilen",
-    "subtitle": "Eine Gemeinschaft von Leidenschaft und Tradition seit 1976.",
+    "subtitle": "Eine Gemeinschaft von Leidenschaft und Tradition seit 1977.",
     "countdownPretext": "50-Jahre-Jubiläumsfest",
     "announcementDate": "Herbst 2027",
     "announcementNote": "Das 50-Jahre-Jubiläumsfest der Supporter-Vereinigung FC Meilen ist für Herbst 2027 geplant. Das genaue Datum und weitere Details werden noch bekannt gegeben."
   },
   "Intro": {
-    "year": "1976",
+    "year": "1977",
     "overline": "UNSERE GESCHICHTE BEGINNT MIT LEIDENSCHAFT",
     "headline": "In Siegen wie in Niederlagen stand unsere Gemeinschaft immer zusammen auf den Rängen. Gegründet von einer Handvoll engagierter Fans, die eine tiefe Liebe zum Fussball und zu ihrer Heimat Meilen teilen, ist die Supporter Vereinigung FC Meilen heute ein fester Bestandteil der lokalen Fussballkultur.",
     "p1": "Was einst bei ein paar Bieren nach dem Spiel begann, hat sich über fünf Jahrzehnte zu einer starken Gemeinschaft entwickelt.",
@@ -54,7 +54,7 @@
   },
   "Gallery": {
     "title": "Galerie",
-    "subtitle": "Historische, ungeschnittene Fotografie. Von 1976 bis heute.",
+    "subtitle": "Historische, ungeschnittene Fotografie. Von 1977 bis heute.",
     "overline": "Die Archive",
     "viewAll": "Galerie ansehen",
     "mockPhoto": "Mock Foto",
@@ -71,7 +71,7 @@
     "shopAll": "Alle Fanartikel ansehen"
   },
   "Footer": {
-    "brandDesc": "Eine Gemeinschaft von Leidenschaft und Tradition seit 1976. Wir unterstützen die Fussballkultur in Meilen.",
+    "brandDesc": "Eine Gemeinschaft von Leidenschaft und Tradition seit 1977. Wir unterstützen die Fussballkultur in Meilen.",
     "menu": "Menü",
     "newsletterTitle": "Newsletter",
     "newsletterDesc": "Bleiben Sie auf dem Laufenden mit unseren neuesten Nachrichten und Veranstaltungen.",
@@ -94,7 +94,7 @@
     "milestone2Title": "Kultur & Choreo",
     "milestone2Desc": "Die Einführung unserer ersten grossen Choreos markierte einen Wendepunkt in der Schweizer Fankultur.",
     "milestone3Title": "Das 50. Jubiläum",
-    "milestone3Desc": "Heute feiern wir nicht nur einen Verein, sondern eine Familie, die seit 1976 besteht.",
+    "milestone3Desc": "Heute feiern wir nicht nur einen Verein, sondern eine Familie, die seit 1977 besteht.",
     "cta": "Mitglied werden & Geschichte schreiben"
   },
   "Contact": {
@@ -123,7 +123,7 @@
     "title": "Gegen modernen Fussball",
     "subtitle": "Wir stehen für Tradition, lokalen Stolz und 90 Minuten bedingungslose lautstarke Unterstützung.",
     "foundationTitle": "Der Gründungsmythos",
-    "foundationDesc1": "Im Herbst 1976 stand eine Gruppe von Freunden im Regen hinter dem Tor und sah zu, wie Meilen ein enges Spiel verlor. Anstatt zu gehen, begannen sie zu singen. Dieser Moment – trotz Wetter und Rückstand zusammenzustehen – wurde zum Ursprung einer Bewegung, die bis heute lebt.",
+    "foundationDesc1": "Im Herbst 1977 stand eine Gruppe von Freunden im Regen hinter dem Tor und sah zu, wie Meilen ein enges Spiel verlor. Anstatt zu gehen, begannen sie zu singen. Dieser Moment – trotz Wetter und Rückstand zusammenzustehen – wurde zum Ursprung einer Bewegung, die bis heute lebt.",
     "foundationDesc2": "Seit fünf Jahrzehnten ist die Supporter Vereinigung FC Meilen das schlagende Herz unseres Stadions. Wir sind nicht nur Fans – wir sind der 12. Mann. Mit unseren Mitgliederbeiträgen unterstützen wir gezielt die Juniorenabteilung und den Club: Wir helfen bei Fussballcamps, organisieren Turniere, leisten finanzielle Beiträge für Trikots und entlasten den Verein auch administrativ. So sorgen wir gemeinsam dafür, dass der lokale Fussball in Meilen nachhaltig gefördert wird und weiterlebt.",
     "solidarityTitle": "Gemeinschaft & Solidarität",
     "solidarityDesc1": "Der FC Meilen ist mehr als ein Spiel – er ist Zusammenhalt, Identität und Familie. Als Supporter Vereinigung FC Meilen fördern wir aktiv die Gemeinschaft: durch Jugendturniere, Unterstützung sozialer Projekte und Engagement vor Ort.",
@@ -145,10 +145,14 @@
     "team": {
       "title": "Das Team",
       "subtitle": "Die Menschen hinter der Leidenschaft.",
+      "boardTitle": "Der Vorstand",
+      "boardSubtitle": "Die gewählte Führung der Supporter-Vereinigung FC Meilen.",
+      "extendedTitle": "Erweitertes Team",
+      "extendedSubtitle": "Unterstützung ausserhalb des Vorstands.",
       "members": {
         "m1": {
           "name": "Slavica Jovanovic",
-          "role": "Kassiererin",
+          "role": "Kassiererin / Vorstandsmitglied",
           "code": "SJ-01",
           "bio": "Slavica Jovanovic verantwortet die finanzielle Führung der Supporter-Vereinigung. Mit Präzision und Transparenz stellt sie sicher, dass alle Mittel gezielt und verantwortungsvoll für die Juniorinnen und Junioren eingesetzt werden."
         },
@@ -165,10 +169,17 @@
           "bio": "Wolfgang Hafner engagiert sich insbesondere in organisatorischen und eventbezogenen Themen. Sein Einsatz trägt wesentlich zur erfolgreichen Umsetzung von Vereinsanlässen und Jubiläumsprojekten bei."
         },
         "m4": {
-          "name": "Danijela Frei",
+          "name": "Anja Weisflog",
           "role": "Vorstandsmitglied",
-          "code": "DF-04",
-          "bio": "Danijela Frei unterstützt den Vorstand in administrativen und kommunikativen Belangen. Mit ihrem Engagement stärkt sie die interne Organisation sowie die Präsenz der Supporter-Vereinigung nach aussen."
+          "code": "AW-04",
+          "bio": "Anja Weisflog unterstützt den Vorstand in administrativen und kommunikativen Belangen. Mit ihrem Engagement stärkt sie die interne Organisation sowie die Präsenz der Supporter-Vereinigung nach aussen."
+        },
+        "m5": {
+          "name": "Fränzi Pfeil",
+          "role": "Verantwortliche Social Media",
+          "badge": "Erweitertes Team (kein Vorstandsmitglied)",
+          "code": "FP-05",
+          "bio": "Verantwortlich für unsere Social-Media-Kanäle auf Facebook, Instagram, TikTok und weiteren Plattformen. Mit kreativen Inhalten sorgt sie für eine lebendige und zeitgemässe Kommunikation rund um die Supporter-Vereinigung."
         }
       }
     }

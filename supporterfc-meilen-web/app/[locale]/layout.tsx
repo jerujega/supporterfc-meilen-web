@@ -28,11 +28,11 @@ const BASE_URL = 'https://www.supporterfcmeilen.ch';
 const seoData: Record<string, { title: string; description: string }> = {
   en: {
     title: 'Supporter FC Meilen – 50th Anniversary',
-    description: 'The official supporter club of FC Meilen. Celebrating 50 years of loyalty, community, and unconditional support since 1976. Join the movement.',
+    description: 'The official supporter club of FC Meilen. Celebrating 50 years of loyalty, community, and unconditional support since 1977. Join the movement.',
   },
   de: {
     title: 'Supporter Vereinigung FC Meilen – 50. Jubiläum',
-    description: 'Die offizielle Supporter Vereinigung des FC Meilen. 50 Jahre Treue, Gemeinschaft und bedingungslose Unterstützung seit 1976. Werde Teil der Bewegung.',
+    description: 'Die offizielle Supporter Vereinigung des FC Meilen. 50 Jahre Treue, Gemeinschaft und bedingungslose Unterstützung seit 1977. Werde Teil der Bewegung.',
   },
 };
 
@@ -113,7 +113,7 @@ function JsonLd({ locale }: { locale: string }) {
     alternateName: 'Supporter FC Meilen',
     url: BASE_URL,
     logo: `${BASE_URL}/50th_logo.png`,
-    foundingDate: '1976-09-12',
+    foundingDate: '1977-09-12',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Burgstrasse 160',
@@ -124,8 +124,8 @@ function JsonLd({ locale }: { locale: string }) {
     email: 'supporter@fcmeilen.ch',
     sport: 'Football',
     description: locale === 'de'
-      ? 'Die offizielle Supporter Vereinigung des FC Meilen seit 1976.'
-      : 'The official supporter club of FC Meilen since 1976.',
+      ? 'Die offizielle Supporter Vereinigung des FC Meilen seit 1977.'
+      : 'The official supporter club of FC Meilen since 1977.',
   };
 
   const websiteSchema = {

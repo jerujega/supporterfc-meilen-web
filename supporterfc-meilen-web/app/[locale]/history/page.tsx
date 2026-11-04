@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props) {
     return {
         title: isDE ? 'Geschichte – 50 Jahre FC Meilen' : 'History – 50 Years of FC Meilen',
         description: isDE
-            ? 'Entdecken Sie die Geschichte der Supporter Vereinigung FC Meilen von 1976 bis heute.'
-            : 'Explore the history of Supporter FC Meilen from 1976 to the present day.',
+            ? 'Entdecken Sie die Geschichte der Supporter Vereinigung FC Meilen von 1977 bis heute.'
+            : 'Explore the history of Supporter FC Meilen from 1977 to the present day.',
         alternates: {
             canonical: `https://www.supporterfcmeilen.ch/${locale}/history`,
             languages: { en: 'https://www.supporterfcmeilen.ch/en/history', de: 'https://www.supporterfcmeilen.ch/de/history' },

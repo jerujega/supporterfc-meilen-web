@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: isDE ? 'Über uns – Supporter Vereinigung FC Meilen' : 'About Us – Supporter FC Meilen',
     description: isDE
-      ? 'Erfahren Sie mehr über die Supporter Vereinigung FC Meilen – unsere Geschichte, Werte und Gemeinschaft seit 1976.'
-      : 'Learn about Supporter FC Meilen – our history, values, and community since 1976.',
+      ? 'Erfahren Sie mehr über die Supporter Vereinigung FC Meilen – unsere Geschichte, Werte und Gemeinschaft seit 1977.'
+      : 'Learn about Supporter FC Meilen – our history, values, and community since 1977.',
     alternates: {
       canonical: `https://www.supporterfcmeilen.ch/${locale}/about`,
       languages: { en: 'https://www.supporterfcmeilen.ch/en/about', de: 'https://www.supporterfcmeilen.ch/de/about' },

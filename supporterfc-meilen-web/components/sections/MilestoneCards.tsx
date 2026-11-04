@@ -8,10 +8,10 @@ export function MilestoneCards() {
     const t = useTranslations('HistoryPage');
 
     const milestones = [
-        { year: '1976', title: t('foundationTitle'), desc: t('foundationDesc'), color: 'bg-ink text-cream' },
+        { year: '1977', title: t('foundationTitle'), desc: t('foundationDesc'), color: 'bg-ink text-cream' },
         { year: '1980s', title: t('milestone1Title'), desc: t('milestone1Desc'), color: 'bg-cream text-ink border border-ink/20' },
-        { year: '2000s', title: t('milestone2Title'), desc: t('milestone2Desc'), color: 'bg-gold text-ink shadow-[8px_8px_0_0_#1A1A1A]' },
-        { year: '2026', title: t('milestone3Title'), desc: t('milestone3Desc'), color: 'bg-orange text-cream' },
+        { year: '2024', title: t('milestone2Title'), desc: t('milestone2Desc'), color: 'bg-gold text-ink shadow-[8px_8px_0_0_#1A1A1A]' },
+        { year: '2027', title: t('milestone3Title'), desc: t('milestone3Desc'), color: 'bg-orange text-cream' },
     ];
 
     return (

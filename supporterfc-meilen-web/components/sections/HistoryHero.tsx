@@ -28,7 +28,7 @@ export function HistoryHero() {
             <Container>
                 <div className="max-w-4xl">
                     <span className="font-sans text-sm font-bold uppercase text-orange tracking-[0.3em] block mb-8">
-                        Est. 1976
+                        Est. 1977
                     </span>
                     <h1
                         ref={titleRef}

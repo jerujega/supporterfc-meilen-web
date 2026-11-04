@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props) {
       ? 'Supporter Vereinigung FC Meilen – 50. Jubiläum | Startseite'
       : 'Supporter FC Meilen – 50th Anniversary | Home',
     description: isDE
-      ? '50 Jahre Supporter Vereinigung FC Meilen. Treue, Gemeinschaft und bedingungslose Unterstützung seit 1976.'
-      : '50 years of Supporter FC Meilen. Loyalty, community, and unconditional support since 1976.',
+      ? '50 Jahre Supporter Vereinigung FC Meilen. Treue, Gemeinschaft und bedingungslose Unterstützung seit 1977.'
+      : '50 years of Supporter FC Meilen. Loyalty, community, and unconditional support since 1977.',
     alternates: {
       canonical: `https://www.supporterfcmeilen.ch/${locale}`,
       languages: { en: 'https://www.supporterfcmeilen.ch/en', de: 'https://www.supporterfcmeilen.ch/de' },
