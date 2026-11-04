@@ -16,7 +16,7 @@ export function TeamSection() {
     ];
 
     const extendedMembers = [
-        { id: 'm5', color: 'bg-vintage text-ink', image: '/Team/Fraenzi Pfeil.svg' }
+        { id: 'm5', color: 'bg-vintage text-ink', image: '/Team/Fraenzi Pfeil.jpg' }
     ];
 
     return (
@@ -130,7 +130,7 @@ export function TeamSection() {
                                         alt={t(`members.${m.id}.name`)}
                                         fill
                                         sizes="(max-width: 768px) 100vw, 30vw"
-                                        className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-105"
+                                        className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-105"
                                     />
                                     <div className="absolute top-4 left-4 font-sans font-black text-white bg-orange px-2 py-1 text-xs uppercase tracking-widest shadow-[2px_2px_0_0_#0B0C10]">
                                         {t(`members.${m.id}.code`)}
