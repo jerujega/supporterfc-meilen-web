@@ -4,6 +4,7 @@ import { locales } from './i18n/request';
 const intlMiddleware = createMiddleware({
     defaultLocale: 'de',
     locales,
+    localeDetection: false,
 });
 
 // Next.js 16 proxy convention
