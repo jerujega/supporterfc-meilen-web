@@ -67,3 +67,4 @@ export const FEATURED_GALLERY_PHOTOS: GalleryPhoto[] = [
     },
   },
 ];
+
