@@ -83,7 +83,7 @@ export function HeroSection({ title: propTitle, subtitle: propSubtitle }: HeroPr
           <div
             className="absolute inset-0 z-0 grayscale group-hover:grayscale-0 transition-all duration-1000"
             style={{
-              backgroundImage: 'url("/Hero.png")',
+              backgroundImage: 'url("/Herohead.png")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
