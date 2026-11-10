@@ -22,14 +22,23 @@ export async function generateMetadata({ params }: Props) {
     params: { slug: resolvedParams.slug },
   }).catch(() => null);
 
+  const isGV = resolvedParams.slug === 'gv-2026' ||
+    resolvedParams.slug === 'next-general-assembly-ga-2026' ||
+    (post && (
+      post.slug?.current === 'gv-2026' ||
+      post.slug?.current === 'next-general-assembly-ga-2026' ||
+      (typeof post.title === 'string' && post.title.toLowerCase().includes('generalversammlung')) ||
+      (post.title?.de && post.title.de.toLowerCase().includes('generalversammlung')) ||
+      (post.title?.en && post.title.en.toLowerCase().includes('generalversammlung'))
+    ));
+
+  if (isGV) {
+    return {
+      title: 'Generalversammlung (GV) 2026 – Neues Datum - Supporter FC Meilen News',
+    };
+  }
+
   if (!post) {
-    if (resolvedParams.slug === 'gv-2026') {
-      return {
-        title: resolvedParams.locale === 'de'
-          ? 'Nächste Generalversammlung (GV) 2026 - Supporter FC Meilen News'
-          : 'Next General Assembly (GV) 2026 - Supporter FC Meilen News',
-      };
-    }
     return { title: 'News Not Found' };
   }
   return { title: `${getLocalized(post.title, resolvedParams.locale)} - Supporter FC Meilen News` };
@@ -43,16 +52,27 @@ export default async function NewsDetail({ params }: Props) {
     params: { slug: resolvedParams.slug },
   }).catch(() => null);
 
-  if (!post && resolvedParams.slug === 'gv-2026') {
+  const isGV = resolvedParams.slug === 'gv-2026' ||
+    resolvedParams.slug === 'next-general-assembly-ga-2026' ||
+    (post && (
+      post.slug?.current === 'gv-2026' ||
+      post.slug?.current === 'next-general-assembly-ga-2026' ||
+      (typeof post.title === 'string' && post.title.toLowerCase().includes('generalversammlung')) ||
+      (post.title?.de && post.title.de.toLowerCase().includes('generalversammlung')) ||
+      (post.title?.en && post.title.en.toLowerCase().includes('generalversammlung'))
+    ));
+
+  if (isGV) {
     post = {
-      _id: 'gv-2026',
+      ...(post || {}),
+      _id: post?._id || 'gv-2026',
       title: {
-        de: 'Nächste Generalversammlung (GV) 2026',
-        en: 'Next General Assembly (GV) 2026',
+        de: 'Generalversammlung (GV) 2026 – Neues Datum',
+        en: 'Generalversammlung (GV) 2026 – Neues Datum',
       },
-      slug: { current: 'gv-2026' },
+      slug: { current: resolvedParams.slug || 'next-general-assembly-ga-2026' },
       publishedAt: '2026-11-13T18:00:00Z',
-      coverImage: '/news-gv-2026.jpg',
+      coverImage: post?.coverImage || '/news-gv-2026.jpg',
       content: [
         {
           _type: 'block',
@@ -61,9 +81,7 @@ export default async function NewsDetail({ params }: Props) {
             {
               _type: 'span',
               _key: 's1',
-              text: resolvedParams.locale === 'de'
-                ? 'Die nächste Generalversammlung der Supporter-Vereinigung FC Meilen findet am 13. November 2026 statt.'
-                : 'The next General Assembly of the Supporter Association FC Meilen will take place on November 13, 2026.',
+              text: 'Unsere Generalversammlung wurde verschoben!\n\nDie diesjährige Generalversammlung der Supporter-Vereinigung des FC Meilen findet neu am Freitag, 13. November 2026, um 18.00 Uhr statt.',
             },
           ],
         },
@@ -74,9 +92,7 @@ export default async function NewsDetail({ params }: Props) {
             {
               _type: 'span',
               _key: 's2',
-              text: resolvedParams.locale === 'de'
-                ? 'Ort: Beim Felix auf der Allmend, Meilen\nBeginn: Ab 18.00 Uhr\nAnmeldung: Eine Voranmeldung ist erforderlich!'
-                : 'Location: Beim Felix auf der Allmend, Meilen\nStart: From 18:00\nRegistration: Advance registration is required!',
+              text: 'Veranstaltungsort: Felix auf der Allmend, Meilen',
             },
           ],
         },
@@ -87,9 +103,18 @@ export default async function NewsDetail({ params }: Props) {
             {
               _type: 'span',
               _key: 's3',
-              text: resolvedParams.locale === 'de'
-                ? 'Das 50-Jahre-Jubiläumsfest der Supporter-Vereinigung FC Meilen ist für Mitte Herbst 2027 geplant. Weitere Informationen folgen.'
-                : 'The 50th anniversary celebration of the Supporter Association FC Meilen is planned for mid-autumn 2027. More information will follow.',
+              text: 'Wir freuen uns, gemeinsam mit unseren Mitgliedern auf das vergangene Vereinsjahr zurückzublicken, aktuelle Entwicklungen zu besprechen und die Zukunft unserer Supporter-Vereinigung aktiv mitzugestalten.\n\nIm Anschluss an die Generalversammlung lassen wir den Abend in gemütlicher Runde ausklingen.',
+            },
+          ],
+        },
+        {
+          _type: 'block',
+          _key: 'b4',
+          children: [
+            {
+              _type: 'span',
+              _key: 's4',
+              text: 'Wir freuen uns auf eure zahlreiche Teilnahme!',
             },
           ],
         },
@@ -114,12 +139,12 @@ export default async function NewsDetail({ params }: Props) {
 
   const formatLocalizedDate = (dateStr: string) => {
     try {
-      const d = new Date(dateStr);
-      if (resolvedParams.locale === 'de') {
-        const months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
-        return `${d.getDate()}. ${months[d.getMonth()]} ${d.getFullYear()} - 18.00 Uhr`;
+      if (isGV) {
+        return 'Freitag, 13. November 2026 – 18.00 Uhr';
       }
-      return format(d, 'MMMM dd, yyyy - HH:mm');
+      const d = new Date(dateStr);
+      const months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+      return `${d.getDate()}. ${months[d.getMonth()]} ${d.getFullYear()}`;
     } catch {
       return dateStr;
     }

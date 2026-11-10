@@ -29,10 +29,10 @@ export default async function NewsPage({ params }: Props) {
   const defaultGvPost = {
     _id: 'gv-2026',
     title: {
-      de: 'Nächste Generalversammlung (GV) 2026',
-      en: 'Next General Assembly (GV) 2026',
+      de: 'Generalversammlung (GV) 2026 – Neues Datum',
+      en: 'Generalversammlung (GV) 2026 – Neues Datum',
     },
-    slug: { current: 'gv-2026' },
+    slug: { current: 'next-general-assembly-ga-2026' },
     publishedAt: '2026-11-13T18:00:00Z',
   };
 
@@ -44,8 +44,30 @@ export default async function NewsPage({ params }: Props) {
     { _id: '4', title: { de: 'Gemeinsam einstehen: Stellungnahme zu Ticketpreisen', en: 'Stand Together: Statement on Ticket Prices' }, slug: { current: 'statement-tickets' }, publishedAt: '2026-03-12T12:00:00Z' },
   ];
 
-  const hasGv = rawPosts.some((p) => p.slug?.current === 'gv-2026' || (typeof p.title === 'string' ? p.title.includes('Generalversammlung') : p.title?.de?.includes('Generalversammlung')));
-  const posts = rawPosts.length > 0 ? (hasGv ? rawPosts : [defaultGvPost, ...rawPosts]) : fallbackPosts;
+  // Normalize posts: ensure Generalversammlung has the exact date 13. November 2026
+  const normalizedPosts = rawPosts.map((p) => {
+    const titleStr = typeof p.title === 'string' ? p.title : (p.title?.de || p.title?.en || '');
+    const isGV = p.slug?.current === 'gv-2026' || p.slug?.current === 'next-general-assembly-ga-2026' || titleStr.toLowerCase().includes('generalversammlung');
+    if (isGV) {
+      return {
+        ...p,
+        title: {
+          de: 'Generalversammlung (GV) 2026 – Neues Datum',
+          en: 'Generalversammlung (GV) 2026 – Neues Datum',
+        },
+        publishedAt: '2026-11-13T18:00:00Z',
+      };
+    }
+    return p;
+  });
+
+  const hasGv = normalizedPosts.some((p) => {
+    const titleStr = typeof p.title === 'string' ? p.title : (p.title?.de || p.title?.en || '');
+    return p.slug?.current === 'gv-2026' || p.slug?.current === 'next-general-assembly-ga-2026' || titleStr.toLowerCase().includes('generalversammlung');
+  });
+
+  const allPosts = rawPosts.length > 0 ? (hasGv ? normalizedPosts : [defaultGvPost, ...normalizedPosts]) : fallbackPosts;
+  const posts = [...allPosts].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   const formatLocalizedDate = (dateStr: string) => {
     try {

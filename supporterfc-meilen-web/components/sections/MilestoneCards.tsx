@@ -10,7 +10,7 @@ export function MilestoneCards() {
     const milestones = [
         { year: '1977', title: t('foundationTitle'), desc: t('foundationDesc'), color: 'bg-ink text-cream' },
         { year: '1980s', title: t('milestone1Title'), desc: t('milestone1Desc'), color: 'bg-cream text-ink border border-ink/20' },
-        { year: '2024', title: t('milestone2Title'), desc: t('milestone2Desc'), color: 'bg-gold text-ink shadow-[8px_8px_0_0_#1A1A1A]' },
+        { year: '2026', title: t('milestone2Title'), subtitle: t('milestone2Subtitle'), desc: t('milestone2Desc'), color: 'bg-gold text-ink shadow-[8px_8px_0_0_#1A1A1A]' },
         { year: '2027', title: t('milestone3Title'), desc: t('milestone3Desc'), color: 'bg-orange text-cream' },
     ];
 
@@ -27,9 +27,14 @@ export function MilestoneCards() {
                                 <span className="font-sans font-black text-5xl md:text-8xl opacity-20 block mb-4 md:mb-6">
                                     {m.year}
                                 </span>
-                                <h3 className="text-2xl sm:text-3xl md:text-5xl font-sans font-black uppercase leading-none mb-4 md:mb-6">
+                                <h3 className="text-2xl sm:text-3xl md:text-5xl font-sans font-black uppercase leading-none mb-3 md:mb-4">
                                     {m.title}
                                 </h3>
+                                {'subtitle' in m && m.subtitle && (
+                                    <h4 className="font-sans font-bold text-base sm:text-lg md:text-xl uppercase tracking-wide mb-4 md:mb-6 opacity-90">
+                                        {m.subtitle}
+                                    </h4>
+                                )}
                             </div>
                             <p className="font-serif text-base sm:text-lg md:text-xl leading-relaxed">
                                 {m.desc}

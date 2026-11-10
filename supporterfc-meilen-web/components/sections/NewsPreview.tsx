@@ -15,18 +15,40 @@ export async function NewsPreview({ locale }: { locale: string }) {
     const defaultGvPost = {
         _id: 'gv-2026',
         title: {
-            de: 'Nächste Generalversammlung (GV) 2026',
-            en: 'Next General Assembly (GV) 2026',
+            de: 'Generalversammlung (GV) 2026 – Neues Datum',
+            en: 'Generalversammlung (GV) 2026 – Neues Datum',
         },
-        slug: { current: 'gv-2026' },
+        slug: { current: 'next-general-assembly-ga-2026' },
         publishedAt: '2026-11-13T18:00:00Z',
     };
 
-    const hasGv = rawPosts.some((p) => p.slug?.current === 'gv-2026' || (typeof p.title === 'string' ? p.title.includes('Generalversammlung') : p.title?.de?.includes('Generalversammlung')));
-    const allPosts = hasGv ? rawPosts : [defaultGvPost, ...rawPosts];
+    // Normalize posts: ensure Generalversammlung has the exact date 13. November 2026
+    const normalizedPosts = rawPosts.map((p) => {
+        const titleStr = typeof p.title === 'string' ? p.title : (p.title?.de || p.title?.en || '');
+        const isGV = p.slug?.current === 'gv-2026' || p.slug?.current === 'next-general-assembly-ga-2026' || titleStr.toLowerCase().includes('generalversammlung');
+        if (isGV) {
+            return {
+                ...p,
+                title: {
+                    de: 'Generalversammlung (GV) 2026 – Neues Datum',
+                    en: 'Generalversammlung (GV) 2026 – Neues Datum',
+                },
+                publishedAt: '2026-11-13T18:00:00Z',
+            };
+        }
+        return p;
+    });
 
-    // Take the latest 3 posts
-    const posts = allPosts.slice(0, 3);
+    const hasGv = normalizedPosts.some((p) => {
+        const titleStr = typeof p.title === 'string' ? p.title : (p.title?.de || p.title?.en || '');
+        return p.slug?.current === 'gv-2026' || p.slug?.current === 'next-general-assembly-ga-2026' || titleStr.toLowerCase().includes('generalversammlung');
+    });
+
+    const allPosts = hasGv ? normalizedPosts : [defaultGvPost, ...normalizedPosts];
+
+    // Take the latest 3 posts, ensuring GV is at the top
+    const sortedPosts = [...allPosts].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    const posts = sortedPosts.slice(0, 3);
 
     const formatLocalizedDate = (dateStr: string) => {
         try {
@@ -35,7 +57,7 @@ export async function NewsPreview({ locale }: { locale: string }) {
                 const months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
                 return `${d.getDate()}. ${months[d.getMonth()]} ${d.getFullYear()}`;
             }
-            return format(d, 'MMM dd, yyyy');
+            return format(d, 'dd. MMMM yyyy');
         } catch {
             return dateStr;
         }
