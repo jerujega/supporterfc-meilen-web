@@ -7,6 +7,7 @@ import { Container } from '@/components/layout/Container';
 import { X, ChevronLeft, ChevronRight, X as XIcon } from 'lucide-react';
 import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
+import { FEATURED_GALLERY_PHOTOS } from '@/lib/data/galleryData';
 
 interface GalleryItem {
   _id: string;
@@ -35,16 +36,42 @@ export function GalleryClient({ initialData, locale }: { initialData: GalleryIte
   // Flatten all images across all years into a single array for the masonry/lightbox
   const allImages = React.useMemo(() => {
     const list: Array<{ url: string; caption?: string; year: number; collectionTitle: string }> = [];
+
+    // 1. First add the official featured gallery photos (2024 handover, aperitif, committee, etc.)
+    FEATURED_GALLERY_PHOTOS.forEach((photo) => {
+      list.push({
+        url: photo.url,
+        caption: getLocalized(photo.caption),
+        year: photo.year,
+        collectionTitle: getLocalized(photo.collectionTitle),
+      });
+    });
+
+    // 2. Then add any Sanity collection images
     initialData.forEach((collection) => {
       if (!collection.images) return;
-      collection.images.forEach((img) => {
+      collection.images.forEach((img: any) => {
         if (img.asset) {
-          list.push({
-            url: urlFor(img.asset).url(),
-            caption: getLocalized(img.caption),
-            year: collection.year,
-            collectionTitle: getLocalized(collection.title),
-          });
+          let url = '';
+          if (typeof img.asset === 'string') {
+            url = img.asset;
+          } else if (img.asset.url) {
+            url = img.asset.url;
+          } else {
+            try {
+              url = urlFor(img.asset).url();
+            } catch {
+              url = '';
+            }
+          }
+          if (url) {
+            list.push({
+              url,
+              caption: getLocalized(img.caption),
+              year: collection.year,
+              collectionTitle: getLocalized(collection.title),
+            });
+          }
         }
       });
     });
@@ -169,7 +196,7 @@ export function GalleryClient({ initialData, locale }: { initialData: GalleryIte
                 src={allImages[currentIndex].url}
                 alt={allImages[currentIndex].caption || t('expandedView')}
                 fill
-                className="object-contain drop-shadow-2xl mix-blend-multiply"
+                className="object-contain drop-shadow-2xl"
                 sizes="100vw"
                 priority
               />

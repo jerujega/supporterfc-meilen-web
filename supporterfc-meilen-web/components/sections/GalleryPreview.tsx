@@ -7,23 +7,30 @@ import { GALLERY_QUERY } from '@/lib/sanity/queries';
 import { urlFor } from '@/lib/sanity/image';
 import { Button } from '../ui/Button';
 import { getLocalized } from '@/lib/utils/locale';
+import { FEATURED_GALLERY_PHOTOS } from '@/lib/data/galleryData';
 
 export async function GalleryPreview({ locale }: { locale: string }) {
     const t = await getTranslations('Gallery');
     const collections = await sanityFetch<any[]>({ query: GALLERY_QUERY }).catch(() => []);
 
-    // Flatten images from collections to get a selection for the preview
-    const previewImages = collections
-        .flatMap(c => (c.images || []).map((img: any) => ({ ...img, collectionTitle: c.title })))
-        .slice(0, 4);
+    // Combine featured photos with any Sanity collections
+    const localPreviewItems = FEATURED_GALLERY_PHOTOS.map((item, idx) => ({
+        _id: `featured-${idx}`,
+        url: item.url,
+        caption: item.caption,
+        collectionTitle: item.collectionTitle,
+    }));
 
-    // Fallback mock if empty
-    const displayImages = previewImages.length > 0 ? previewImages : [
-        { _id: 'm1', caption: 'Classic Terrace Action', collectionTitle: '1970s' },
-        { _id: 'm2', caption: 'Choreo Preparation', collectionTitle: '1990s' },
-        { _id: 'm3', caption: 'The Old Pitch', collectionTitle: '1980s' },
-        { _id: 'm4', caption: 'Away Day Vibes', collectionTitle: '2010s' },
-    ];
+    const sanityImages = collections.flatMap(c =>
+        (c.images || []).map((img: any) => ({
+            _id: img.asset?._id,
+            url: img.asset?.url ? img.asset.url : (img.asset ? urlFor(img.asset).url() : ''),
+            caption: img.caption,
+            collectionTitle: c.title,
+        }))
+    ).filter(img => Boolean(img.url));
+
+    const displayImages = [...localPreviewItems, ...sanityImages].slice(0, 4);
 
     return (
         <section className="py-24 border-b border-ink/20 bg-vintage">
@@ -40,13 +47,13 @@ export async function GalleryPreview({ locale }: { locale: string }) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
                     {displayImages.map((img, i) => (
                         <div
-                            key={img.asset?._id || i}
+                            key={img._id || i}
                             className="group relative aspect-square overflow-hidden border border-ink/10 bg-cream"
                         >
-                            {img.asset ? (
+                            {img.url ? (
                                 <Image
-                                    src={urlFor(img.asset).url()}
-                                    alt={img.caption || 'Gallery image'}
+                                    src={img.url}
+                                    alt={getLocalized(img.caption, locale) || 'Gallery image'}
                                     fill
                                     className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 />
@@ -60,7 +67,7 @@ export async function GalleryPreview({ locale }: { locale: string }) {
                                 <p className="font-sans text-[10px] font-black uppercase text-orange tracking-[0.2em] mb-1">
                                     {getLocalized(img.collectionTitle, locale)}
                                 </p>
-                                <p className="font-serif text-white italic text-sm line-clamp-1">
+                                <p className="font-serif text-white italic text-sm line-clamp-2">
                                     {getLocalized(img.caption, locale)}
                                 </p>
                             </div>
